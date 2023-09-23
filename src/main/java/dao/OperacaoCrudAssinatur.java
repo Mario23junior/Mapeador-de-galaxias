@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.Galaxy;
 
-public interface peracaoCrudAssinatur {
+public interface OperacaoCrudAssinatur {
 	
   public static void cricaoGalaxy(Galaxy galaxy) {};
   public static void eclusaoGalaxy(int galaxiId) {};
