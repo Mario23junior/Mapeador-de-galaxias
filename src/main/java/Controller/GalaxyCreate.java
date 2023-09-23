@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.GalaxyDao;
+import model.Galaxy;
+
 @WebServlet("/GalaxyCreate")
 public class GalaxyCreate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -22,6 +25,17 @@ public class GalaxyCreate extends HttpServlet {
 
  
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Galaxy galaxi = new Galaxy();
+		galaxi.setNome (request.getParameter("nome"));
+		galaxi.setImg (request.getParameter("img"));
+		galaxi.setAno (request.getParameter("ano"));
+		galaxi.setMagnitude(request.getParameter("magnitude"));
+		galaxi.setQtproxima(request.getParameter("qtproxima"));
+		galaxi.setDistancia(request.getParameter("distancia"));
+		galaxi.setConstelacao(request.getParameter("constelacao"));
+		galaxi.setDescricao(request.getParameter("descricao"));
+		galaxi.setTipo(request.getParameter("tipo"));
+		GalaxyDao.cricaoGalaxy(galaxi);
  		doGet(request, response);
 	}
 
