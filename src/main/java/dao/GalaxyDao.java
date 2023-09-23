@@ -1,5 +1,5 @@
 package dao;
 
-public class GalaxyDao {
+public class GalaxyDao implements OperacaoCrudAssinatur{
 
 }
