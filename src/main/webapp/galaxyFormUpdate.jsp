@@ -1,10 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
-
+ <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
+ <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
 <!doctype html>
-<html lang="en">
-
-<head>
+ <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style/sidebars.css" rel="stylesheet">
@@ -68,11 +65,9 @@
 
 				<div class="row g-9">
 					<div class="col-sm-6">
-						<label for="firstName" class="form-label"> Id</label> <input
-							value="${galaxy.id}" name="id" type="text" class="form-control"
-							id="firstName" required>
-						<div class="invalid-feedback"></div>
-					</div>
+ 					<input class="form-control"	value="${galaxy.id}" name="id" style="visibility:hidden" id="disabledInput" type="number"/>
+ 					</div>
+					
 					
  					<div class="col-sm-6">
 						<label for="firstName" class="form-label"> Nome</label> <input
@@ -128,16 +123,16 @@
 
 
 					<div class="col-12">
-						<label for="address2" class="form-label">Url da Imagem<span
-							class="text-body-secondary"></span></label>
-							 <input type="text" value="${galaxy.img}" class="form-control" id="address2">
+						<label for="address2" class="form-label">URL da imagem<span
+							class="text-body-secondary"></span></label> 
+							<input type="text"value="${galaxy.img}" name ="img"   class="form-control" value="">
 					</div>
 
 					<br> <br> <br> <br>
 					<div class="form-group">
 						<label for="exampleFormControlTextarea1">Insira uma descrição da galaxia</label>
-						<textarea class="form-control" rows="3">
-						    ${galaxy.descricao}
+						<textarea class="form-control" rows="3" value="${galaxy.descricao}">
+						   
 						</textarea>
 					</div>
 				</div>

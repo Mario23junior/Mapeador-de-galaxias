@@ -1,8 +1,7 @@
+<%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
 <%@page import="java.util.List"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
 <!doctype html>
-<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,10 +62,10 @@
 					<div class="card" style="width: 51rem;">
 						<div class="card-body">
 							<div>
-								<h7 class="text-primary"> Lista de gal·xias bem conhecidas
-								por: um conjunto de coordenadas, ou uma melhor, designaÁ„o
-								sistem·tica de obtenÁ„o e identificaÁ„o de suas estruturas
-								fÌsicas e matem·ticas. </h7>
+								<h7 class="text-primary"> Lista de gal√°xias bem conhecidas
+								por: um conjunto de coordenadas, ou uma melhor, designa√ß√£o
+								sistem√°tica de obten√ß√£o e identifica√ß√£o de suas estruturas
+								f√≠sicas e matem√°ticas. </h7>
 							</div>
 						</div>
 					</div>
@@ -81,7 +80,7 @@
 					<div id="showAlert"></div>
 				</div>
 			</div>
-			<!-- Inclus„o de listagem  -->
+			<!-- Inclus√£o de listagem  -->
 
 
 
@@ -92,14 +91,15 @@
 							class="table-responsive-xl table table-sm table-bordered text-center">
 							<thead>
 								<tr>
+							        <th>Identifica√ß√£o</th>
 									<th>Nome</th>
-									<th>ConstelaÁıes</th>
+									<th>Constela√ß√µes</th>
 									<th>tipo</th>
 									<th>Distancia da terra</th>
 									<th>Ano de descoberta</th>
 									<th>magnitude</th>
 									<th>Estrelas a proximadas</th>
-									<th>AÁıes</th>
+									<th>A√ß√µes</th>
 								</tr>
 							</thead>
 						</tbody>
@@ -107,6 +107,7 @@
 
 								<c:forEach items="${galaxi}" var="resultado">
 									<tr>
+										<td>${resultado.id}</td>
 										<td>${resultado.nome}</td>
 										<td>${resultado.constelacao}</td>
 										<td>${resultado.tipo}</td>
