@@ -41,10 +41,10 @@
                </svg> Inicio
 				</a></li>
 
-				<li><a href="index.html" class="nav-link text-white"> <use
-							xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg> Salvar
-						galaxias
-				</a></li>
+				<li><a href="index.html" class="nav-link text-white"> 
+				  <use xlink:href="#speedometer2" /> <i class="bi bi-save"></i> 
+				  </svg> Salvar galaxias</a>
+				</li>
 
 				<li><a href="GalaxyCreate" class="nav-link text-white"> <use
 							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>
@@ -69,9 +69,8 @@
 							</div>
 						</div>
 					</div>
-					<a href="formGalaxy.html" class="btn btn-primary btn-lg active"
-						role="button" aria-pressed="true">Registrar galaxia</a>
-
+					<a href="index.html" class="btn btn-primary btn-lg active"
+						role="button" href="index.html" aria-pressed="true">Registrar galaxia</a>
 				</div>
 			</div>
 			<hr>
@@ -111,8 +110,8 @@
 										<td>${resultado.tipo}</td>
 										<td>${resultado.distancia}</td>
 										<td>${resultado.ano}</td>
-										<td>${resultado.qtproxima}</td>
 										<td>${resultado.magnitude}</td>
+										<td>${resultado.qtproxima}</td>
 										<td>
 										<a class="btn btn-warning" href="galaxyUpdate?id=${resultado.id}" role="button">Editar</a>
 										 <a class="btn btn-danger" href="galaxyDel?id=${resultado.id}" role="button">Excluir</a>
