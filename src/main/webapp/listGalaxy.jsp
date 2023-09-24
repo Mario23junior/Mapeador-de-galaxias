@@ -45,6 +45,12 @@
 				  <use xlink:href="#speedometer2" /> <i class="bi bi-save"></i> 
 				  </svg> Salvar galaxias</a>
 				</li>
+				
+				<li><a href="catalagoGalaxy.jsp" class="nav-link text-white"> 
+				  <use xlink:href="#speedometer2" /><i class="bi bi-tropical-storm"></i> 
+				  </svg>Galaxias catalogadas</a>
+				</li>
+				
 
 				<li><a href="GalaxyCreate" class="nav-link text-white"> <use
 							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>

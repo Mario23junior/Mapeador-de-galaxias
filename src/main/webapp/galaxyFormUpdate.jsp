@@ -6,15 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style/sidebars.css" rel="stylesheet">
 <link rel="stylesheet">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-	rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
 <title>Atualização de galaxias</title>
 <link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-	crossorigin="anonymous">
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -45,6 +40,12 @@
 							xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg> Salvar
 						galaxias
 				</a></li>
+				
+					<li><a href="catalagoGalaxy.jsp" class="nav-link text-white"> 
+				  <use xlink:href="#speedometer2" /><i class="bi bi-tropical-storm"></i> 
+				  </svg>Galaxias catalogadas</a>
+				</li>
+				
 
 				<li><a href="GalaxyCreate" class="nav-link text-white"> <use
 							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>
