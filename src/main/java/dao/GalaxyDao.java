@@ -80,6 +80,34 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 		}
 	};
 
+	public static Galaxy buscaGalaxyId(int id) {
+		sql = String.format("select * from Galaxy where id = %d%", id);
+
+		try {
+			Statement statament = conexao.createStatement();
+			ResultSet result = statament.executeQuery(sql);
+			Galaxy galaxi = new Galaxy();
+
+			while (result.next()) {
+				galaxi.setId(result.getInt("id"));
+				galaxi.setNome(result.getString("nome"));
+				galaxi.setAno(result.getString("ano"));
+				galaxi.setMagnitude(result.getString("magnitude"));
+				galaxi.setQtproxima(result.getString("qtproxima"));
+				galaxi.setDistancia(result.getString("distancia"));
+				galaxi.setConstelacao(result.getString("constelacao"));
+				galaxi.setTipo(result.getString("tipo"));
+			}
+			System.out.println("Correto busca por id de galaxias");
+			return galaxi;
+
+		} catch (SQLException e) {
+			System.out.println("Falha na busca por id de galaxias :( " + e.getMessage());
+			return null;
+		}
+	}
+
 	public static void galaxyUpdate(Galaxy galaxy) {
 	};
+
 }
