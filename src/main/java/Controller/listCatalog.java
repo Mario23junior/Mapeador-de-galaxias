@@ -13,25 +13,29 @@ import javax.servlet.http.HttpServletResponse;
 import dao.GalaxyDao;
 import model.Galaxy;
 
-@WebServlet("/GalaxyCreate")
-public class GalaxyCreate extends HttpServlet {
-	private static final long serialVersionUID = 1L;
  
-    public GalaxyCreate() {
+@WebServlet("/listCatalog")
+public class listCatalog extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public listCatalog() {
         super();
      }
- 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
- 		String pesquisa = request.getParameter("pesquisa");
+
+ 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String pesquisa = request.getParameter("pesquisa");
  		if(pesquisa == null) {
  			pesquisa = "";
  		}
  		
  		List<Galaxy> galaxiFind = GalaxyDao.GalaxiaBuscaPor(pesquisa);
  		request.setAttribute("galaxi", galaxiFind);
- 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("listGalaxy.jsp");
- 		requestDispatcher.forward(request, response);	
- 	}
- 	
+ 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("catalagoGalaxy.jsp");
+ 		requestDispatcher.forward(request, response);
+	}
+	 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Galaxy galaxi = new Galaxy();
 		galaxi.setNome (request.getParameter("nome"));

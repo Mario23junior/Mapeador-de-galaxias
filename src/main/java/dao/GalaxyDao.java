@@ -50,6 +50,7 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 				galaxi.setNome(result.getString("nome"));
 				galaxi.setAno(result.getString("ano"));
 				galaxi.setMagnitude(result.getString("magnitude"));
+				galaxi.setImg(result.getString("img"));
 				galaxi.setQtproxima(result.getString("qtproxima"));
 				galaxi.setDistancia(result.getString("distancia"));
 				galaxi.setDescricao(result.getString("descricao"));

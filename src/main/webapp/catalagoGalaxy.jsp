@@ -1,14 +1,90 @@
- <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
- <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
+<%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
 <!doctype html>
- <head>
+<head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style/sidebars.css" rel="stylesheet">
+<link href="style/card.css" rel="stylesheet">
+
 <link rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+	rel="stylesheet">
 <title>Catalago de galaxias</title>
 <link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
 </head>
 
+<body>
+<body>
+	<!-- ######################Sidebars -->
+<body>
+	<main class="d-flex flex-nowrap">
+		<h1 class="visually-hidden">Sidebars examples</h1>
+
+		<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+			style="width: 280px;">
+			<a href="index.html"
+				class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+				<svg class="bi pe-none me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg> <span class="fs-4">Mapeador de Galaxias</span>
+			</a>
+			<hr>
+			<ul class="nav nav-pills flex-column mb-auto">
+				<li class="nav-item"><a href="index.html"
+					class="nav-link active" aria-current="page"> <svg
+							class="bi pe-none me-2" width="3" height="16">
+                <use xlink:href="#home" />
+                <i class="bi bi-house"></i>
+               </svg> Inicio
+				</a></li>
+
+				<li><a href="index.html" class="nav-link text-white"> <use
+							xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg> Salvar
+						galaxias
+				</a></li>
+
+				<li><a href="listCatalog" class="nav-link text-white">
+						<use xlink:href="#speedometer2" /><i class="bi bi-tropical-storm"></i>
+						</svg>Galaxias catalogadas
+				</a></li>
+
+
+				<li><a href="GalaxyCreate" class="nav-link text-white"> <use
+							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>
+						Listar galaxias
+				</a></li>
+		</div>
+		</div>
+
+		<!-- ######################fim Sidebars -->
+
+	
+ 
+ 
+<c:forEach items="${galaxi}" var="resultado">
+ 	 <section class="bg-light" id="receitas">
+				<div class="container">
+					<div class="row justify-content-center">
+						<article
+							class="card borda-card imagem-card p-0 m-4 col-12 col-md-4">
+							<img src="${resultado.img}.jpeg class="card-img-top card-posicao-imagem" alt="Arroz frito visto de cima">
+							<div class="card-body">
+								<h5 class="card-title">${resultado.nome}</h5>
+								<p class="card-text">${resultado.descricao}</p>
+								<a href="#" data-bs-toggle="modal" data-bs-target="#arrozfrito"
+									class="btn cor-botao">Veja a Receita</a>
+							</div>
+						</article>
+					</div>
+				</div>
+		</section>
+</c:forEach>
+     
+</body>

@@ -46,7 +46,7 @@
 				  </svg> Salvar galaxias</a>
 				</li>
 				
-				<li><a href="catalagoGalaxy.jsp" class="nav-link text-white"> 
+				<li><a href="listCatalog" class="nav-link text-white"> 
 				  <use xlink:href="#speedometer2" /><i class="bi bi-tropical-storm"></i> 
 				  </svg>Galaxias catalogadas</a>
 				</li>
