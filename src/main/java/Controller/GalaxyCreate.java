@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,10 +20,15 @@ public class GalaxyCreate extends HttpServlet {
         super();
      }
  	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
- 		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
- 
+ 		String pesquisa = request.getParameter("pesquisa");
+ 		if(pesquisa == null) {
+ 			pesquisa = "";
+ 		}
+ 		
+ 		List<Galaxy> galaxiFind = GalaxyDao.GalaxiaBuscaPor(pesquisa);
+ 		
+ 	}
+ 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Galaxy galaxi = new Galaxy();
 		galaxi.setNome (request.getParameter("nome"));

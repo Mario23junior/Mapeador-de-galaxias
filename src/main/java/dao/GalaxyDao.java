@@ -2,7 +2,11 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import db.ConexaoMachin;
 import model.Galaxy;
@@ -32,8 +36,59 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 		}
 	};
 
+	public static List<Galaxy> GalaxiaBuscaPor(String pesquisa){
+		sql = String.format("select * from Galaxy where nome like '%s%%' or tipo like '%s%%'",pesquisa,pesquisa);
+		List<Galaxy> g = new ArrayList<Galaxy>();
+		
+		try {
+			Statement statament = conexao.createStatement();
+			ResultSet result = statament.executeQuery(sql);
+			
+			while (result.next()) {
+				Galaxy galaxi = new Galaxy();
+				galaxi.setId(result.getInt("id"));
+				galaxi.setImg(result.getString("img"));
+				galaxi.setAno(result.getString("ano"));
+				galaxi.setNome(result.getString("nome"));
+				galaxi.setConstelacao(result.getString("constelacao"));
+				galaxi.setDescricao(result.getString("descricao"));
+				galaxi.setTipo(result.getString("tipo"));
+				g.add(galaxi);
+			}
+			
+			System.out.println("Correto busca por galaxias");
+			return g;
+			
+		} catch (SQLException e) {
+			System.out.println("Falha na busca por galaxias :( "+ e.getMessage());
+			return null;
+		}
+		
+	}
 //	  public static void eclusaoGalaxy(int galaxiId) {};
 //	  public static Galaxy buscaIdGalaxy() {return null;}
-//	  public static List<Galaxy> GalaxiaBuscaPor(String galaxyPesqu){return null;}
 //	  public static void galaxyUpdate(Galaxy galaxy){};
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
