@@ -47,11 +47,12 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 			while (result.next()) {
 				Galaxy galaxi = new Galaxy();
 				galaxi.setId(result.getInt("id"));
-				galaxi.setImg(result.getString("img"));
-				galaxi.setAno(result.getString("ano"));
 				galaxi.setNome(result.getString("nome"));
+				galaxi.setAno(result.getString("ano"));
+				galaxi.setMagnitude(result.getString("magnitude"));
+				galaxi.setQtproxima(result.getString("qtproxima"));
+				galaxi.setDistancia(result.getString("distancia"));
 				galaxi.setConstelacao(result.getString("constelacao"));
-				galaxi.setDescricao(result.getString("descricao"));
 				galaxi.setTipo(result.getString("tipo"));
 				g.add(galaxi);
 			}

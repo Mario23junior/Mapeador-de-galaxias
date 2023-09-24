@@ -3,6 +3,7 @@ package Controller;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,6 +27,9 @@ public class GalaxyCreate extends HttpServlet {
  		}
  		
  		List<Galaxy> galaxiFind = GalaxyDao.GalaxiaBuscaPor(pesquisa);
+ 		request.setAttribute("galaxi", galaxiFind);
+ 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("listGalaxy.jsp");
+ 		requestDispatcher.forward(request, response);
  		
  	}
  	

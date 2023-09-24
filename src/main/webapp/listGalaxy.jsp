@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@page import="java.util.List"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix='c'%>
 
 <!doctype html>
 <html lang="en">
@@ -43,12 +42,12 @@
                </svg> Inicio
 				</a></li>
 
-				<li><a href="index.html" class="nav-link text-white">
-						<use xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg>
-						Salvar galaxias
+				<li><a href="index.html" class="nav-link text-white"> <use
+							xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg> Salvar
+						galaxias
 				</a></li>
 
-				<li><a href="ListGalaxy.jsp" class="nav-link text-white"> <use
+				<li><a href="GalaxyCreate" class="nav-link text-white"> <use
 							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>
 						Listar galaxias
 				</a></li>
@@ -57,18 +56,17 @@
 		<!-- ######################fim Sidebars -->
 
 
-		<div class="b-example-divider b-example-vr"></div>
-		<div class="container">
+ 		<div class="container">
 			<div class="row mt-4">
 				<div
 					class="col-lg-12 d-flex justify-content-between align-items-center">
 					<div class="card" style="width: 51rem;">
 						<div class="card-body">
 							<div>
-								<h7 class="text-primary"> Lista de gal√°xias bem conhecidas
-								por: um conjunto de coordenadas, ou uma melhor, designa√ß√£o
-								sistem√°tica de obten√ß√£o e identifica√ß√£o de suas estruturas
-								f√≠sicas e matem√°ticas. </h7>
+								<h7 class="text-primary"> Lista de gal·xias bem conhecidas
+								por: um conjunto de coordenadas, ou uma melhor, designaÁ„o
+								sistem·tica de obtenÁ„o e identificaÁ„o de suas estruturas
+								fÌsicas e matem·ticas. </h7>
 							</div>
 						</div>
 					</div>
@@ -83,7 +81,7 @@
 					<div id="showAlert"></div>
 				</div>
 			</div>
-			<!-- Inclus√£o de listagem  -->
+			<!-- Inclus„o de listagem  -->
 
 
 
@@ -95,31 +93,35 @@
 							<thead>
 								<tr>
 									<th>Nome</th>
-									<th>Constela√ß√µes</th>
+									<th>ConstelaÁıes</th>
 									<th>tipo</th>
 									<th>Distancia da terra</th>
 									<th>Ano de descoberta</th>
 									<th>magnitude</th>
 									<th>Estrelas a proximadas</th>
-									<th>A√ß√µes</th>
+									<th>AÁıes</th>
 								</tr>
+							</thead>
+						</tbody>
 
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>
-									<a class="btn btn-warning"  btn-sm" role="button">Editar</a>
-									<a class="btn btn-danger" href="#" role="button">Excluir</a></td>
-									</td>
 
-								</tr>
-								</tr>
-
+								<c:forEach items="${galaxi}" var="resultado">
+									<tr>
+										<td>${resultado.nome}</td>
+										<td>${resultado.constelacao}</td>
+										<td>${resultado.tipo}</td>
+										<td>${resultado.distancia}</td>
+										<td>${resultado.ano}</td>
+										<td>${resultado.qtproxima}</td>
+										<td>${resultado.magnitude}</td>
+										<td>
+										<a class="btn btn-warning"
+											href="galaxyEditar?id=${resultado.id}" role="button">Editar</a>
+											<a class="btn btn-danger"
+											href="galaxyDeletar?id=${resultado.id}" role="button">Excluir</a>
+										</td>
+									</tr>
+								</c:forEach>
 							</thead>
 							<tbody>
 
