@@ -1,7 +1,7 @@
-li {
+.list-group-item {
 	font-weight: bold;
 }
 
-h5 {
+.card-title {
 	font-weight: bold;
 }

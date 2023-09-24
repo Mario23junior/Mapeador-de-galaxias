@@ -64,9 +64,6 @@
 		</div>
 
 		<!-- ######################fim Sidebars -->
-
-	
- 
  
  	 <section class="bg-light">
 				<div class="container">
