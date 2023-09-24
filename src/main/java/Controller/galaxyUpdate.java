@@ -2,6 +2,7 @@ package Controller;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,6 +25,10 @@ public class galaxyUpdate extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int galaxId = Integer.parseInt(request.getParameter("id"));
 		Galaxy galaxi = GalaxyDao.buscaGalaxyId(galaxId);
+		request.setAttribute("galaxy", galaxi);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("galaxyForm.jsp");
+ 		requestDispatcher.forward(request, response);
+		
  	}
 
  
