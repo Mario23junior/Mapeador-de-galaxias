@@ -115,13 +115,14 @@
 										<td>${resultado.qtproxima}</td>
 										<td>${resultado.magnitude}</td>
 										<td>
-										<a class="btn btn-warning" href="galaxyEditar?id=${resultado.id}" role="button">Editar</a>
-										 <a class="btn btn-danger" href="galaxyUpdate?id=${resultado.id}" role="button">Excluir</a>
+										<a class="btn btn-warning" href="galaxyUpdate?id=${resultado.id}" role="button">Editar</a>
+										 <a class="btn btn-danger" href="galaxyDel?id=${resultado.id}" role="button">Excluir</a>
 										</td>
 									</tr>
 								</c:forEach>
 							</thead>
 							<tbody>
+							 
 
 							</tbody>
 						</table>

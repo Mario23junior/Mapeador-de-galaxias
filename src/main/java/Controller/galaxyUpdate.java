@@ -25,8 +25,9 @@ public class galaxyUpdate extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int galaxId = Integer.parseInt(request.getParameter("id"));
 		Galaxy galaxi = GalaxyDao.buscaGalaxyId(galaxId);
+		
 		request.setAttribute("galaxy", galaxi);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("galaxyForm.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("galaxyFormUpdate.jsp");
  		requestDispatcher.forward(request, response);
 		
  	}

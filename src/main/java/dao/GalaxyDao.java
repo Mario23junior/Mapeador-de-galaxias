@@ -81,7 +81,7 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 	};
 
 	public static Galaxy buscaGalaxyId(int id) {
-		sql = String.format("select * from Galaxy where id = %d%", id);
+		sql = String.format("select * from Galaxy where id = %d", id);
 
 		try {
 			Statement statament = conexao.createStatement();
@@ -93,8 +93,10 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 				galaxi.setNome(result.getString("nome"));
 				galaxi.setAno(result.getString("ano"));
 				galaxi.setMagnitude(result.getString("magnitude"));
+				galaxi.setImg(result.getString("img"));
 				galaxi.setQtproxima(result.getString("qtproxima"));
 				galaxi.setDistancia(result.getString("distancia"));
+				galaxi.setDescricao(result.getString("descricao"));
 				galaxi.setConstelacao(result.getString("constelacao"));
 				galaxi.setTipo(result.getString("tipo"));
 			}
