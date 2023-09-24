@@ -20,5 +20,8 @@ public class GalaxyDeletarEatualizar extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int galaxiId = Integer.parseInt(request.getParameter("id"));
 		GalaxyDao.exclusaoGalaxy(galaxiId);
+		
+		GalaxyCreate galaxiSelesct = new GalaxyCreate();
+		galaxiSelesct.doGet(request, response);
 	}
 }
