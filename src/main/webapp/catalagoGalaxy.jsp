@@ -76,7 +76,12 @@
 							class="card borda-card imagem-card p-0 m-4 col-12 col-md-4">
 							<img src="${resultado.img}"/>
 							<div class="card-body">
-						     <h5 class="card-title">Nome : ${resultado.nome}</h5>
+						     <h5 class="card-title">${resultado.nome}</h5>
+						       <li class="list-group-item">Ano de descoberta : ${resultado.ano}</li>
+							   <li class="list-group-item">Magnitude Aparente (V) : ${resultado.magnitude}</li>
+							   <li class="list-group-item">Quatidade de estrlas :  ${resultado.qtproxima}</li>
+							   <li class="list-group-item">Estrutura fisica :  ${resultado.tipo}</li> 
+							   
 								<p class="card-text">${resultado.descricao}</p>
  							</div>
 						</article>
