@@ -91,8 +91,7 @@
 							class="table-responsive-xl table table-sm table-bordered text-center">
 							<thead>
 								<tr>
-							        <th>Identificação</th>
-									<th>Nome</th>
+ 									<th>Nome</th>
 									<th>Constelações</th>
 									<th>tipo</th>
 									<th>Distancia da terra</th>
@@ -107,8 +106,7 @@
 
 								<c:forEach items="${galaxi}" var="resultado">
 									<tr>
-										<td>${resultado.id}</td>
-										<td>${resultado.nome}</td>
+ 										<td>${resultado.nome}</td>
 										<td>${resultado.constelacao}</td>
 										<td>${resultado.tipo}</td>
 										<td>${resultado.distancia}</td>

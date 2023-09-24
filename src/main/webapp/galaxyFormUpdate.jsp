@@ -64,10 +64,10 @@
 			<form class="needs-validation" action=galaxyUpdate method="POST">
 
 				<div class="row g-9">
-					<div class="col-sm-6">
- 					<input class="form-control"	value="${galaxy.id}" name="id" style="visibility:hidden" id="disabledInput" type="number"/>
+					<div class="col-sm-10">
+ 					<input class="form-control"	value="${galaxy.id}" name="id" style="visibility:hidden" type="number"/>
  					</div>
-					
+ 					
 					
  					<div class="col-sm-6">
 						<label for="firstName" class="form-label"> Nome</label> <input
@@ -121,20 +121,20 @@
 							<input type="text" name="constelacao" value="${galaxy.constelacao}"  class="form-control" value="">
 					</div>
 
-
 					<div class="col-12">
 						<label for="address2" class="form-label">URL da imagem<span
 							class="text-body-secondary"></span></label> 
 							<input type="text"value="${galaxy.img}" name ="img"   class="form-control" value="">
 					</div>
+					
+						<div class="col-12">
+						<label for="address2" class="form-label">Descrição da galaxia<span
+							class="text-body-secondary"></span></label> 
+							<input type="text"value="${galaxy.descricao}" name ="descricao"   class="form-control" value="">
+					</div>
+					
 
 					<br> <br> <br> <br>
-					<div class="form-group">
-						<label for="exampleFormControlTextarea1">Insira uma descrição da galaxia</label>
-						<textarea class="form-control" rows="3" value="${galaxy.descricao}">
-						   
-						</textarea>
-					</div>
 				</div>
 				<hr class="my-12">
 				<button class="w-100 btn btn-primary btn-lg" type="submit">Atualizar</button>
