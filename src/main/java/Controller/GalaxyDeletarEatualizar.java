@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.GalaxyDao;
+
 @WebServlet("/galaxyDel")
 public class GalaxyDeletarEatualizar extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -15,7 +17,8 @@ public class GalaxyDeletarEatualizar extends HttpServlet {
 		super();
 	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int galaxiId = Integer.parseInt(request.getParameter("id"));
+		GalaxyDao.exclusaoGalaxy(galaxiId);
 	}
 }

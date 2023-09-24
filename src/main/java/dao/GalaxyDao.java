@@ -66,7 +66,7 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 		}
 		
 	}
-//	  public static void eclusaoGalaxy(int galaxiId) {};
+	  public static void exclusaoGalaxy(int galaxiId) {};
 //	  public static Galaxy buscaIdGalaxy() {return null;}
 //	  public static void galaxyUpdate(Galaxy galaxy){};
 }
