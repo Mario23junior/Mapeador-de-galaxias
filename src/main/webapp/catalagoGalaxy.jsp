@@ -68,23 +68,21 @@
 	
  
  
-<c:forEach items="${galaxi}" var="resultado">
- 	 <section class="bg-light" id="receitas">
+ 	 <section class="bg-light">
 				<div class="container">
 					<div class="row justify-content-center">
+                      <c:forEach items="${galaxi}" var="resultado">
 						<article
 							class="card borda-card imagem-card p-0 m-4 col-12 col-md-4">
-							<img src="${resultado.img}.jpeg class="card-img-top card-posicao-imagem" alt="Arroz frito visto de cima">
+							<img src="${resultado.img}"/>
 							<div class="card-body">
-								<h5 class="card-title">${resultado.nome}</h5>
+						     <h5 class="card-title">Nome : ${resultado.nome}</h5>
 								<p class="card-text">${resultado.descricao}</p>
-								<a href="#" data-bs-toggle="modal" data-bs-target="#arrozfrito"
-									class="btn cor-botao">Veja a Receita</a>
-							</div>
+ 							</div>
 						</article>
+                     </c:forEach>
 					</div>
 				</div>
 		</section>
-</c:forEach>
-     
+		     
 </body>
