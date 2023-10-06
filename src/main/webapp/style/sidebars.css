@@ -39,6 +39,14 @@
         overflow-y: hidden;
       }
 
+     .img-logo{
+        width: 14%;
+        position: absolute;
+        top: 1%;
+     }
+     
+     span{
+      }
       .nav-scroller .nav {
         display: flex;
         flex-wrap: nowrap;
