@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <a href="logo.gif">
+  <a href="img/logcDoc.gif">
     <img src="logo/logo.gif" alt="Logo" width="700" height="300" style="border-radius: 50%"/>
   </a>
 
