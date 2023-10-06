@@ -36,7 +36,7 @@
                </svg> Inicio
 				</a></li>
 
-				<li><a href="index.html" class="nav-link text-white"> <use
+				<li><a href="salvarGalaxias.html" class="nav-link text-white"> <use
 							xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg> Salvar
 						galaxias
 				</a></li>

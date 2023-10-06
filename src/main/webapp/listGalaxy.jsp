@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<!-- ######################Sidebars -->
+		<!-- ######################Sidebars -->
 <body>
 	<main class="d-flex flex-nowrap">
 		<h1 class="visually-hidden">Sidebars examples</h1>
@@ -29,28 +29,29 @@
 				class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
 				<svg class="bi pe-none me-2" width="40" height="32">
             <use xlink:href="#bootstrap" />
-          </svg> <span class="fs-4">Mapeador de Galaxias</span>
-			</a>
+            </svg> 
+            <img class="img-logo" src="https://cdn.pixabay.com/animation/2023/04/27/05/49/05-49-58-802_512.gif">
+ 			</a>
+            <p><span class="fs-1">Mapeador de Galaxias</span></p>
 			<hr>
 			<ul class="nav nav-pills flex-column mb-auto">
-				<li class="nav-item"><a href="index.html"
-					class="nav-link active" aria-current="page"> <svg
-							class="bi pe-none me-2" width="3" height="16">
-                <use xlink:href="#home" />
-                <i class="bi bi-house"></i>
-               </svg> Inicio
+			
+			<li>
+		 	    <a href="index.html" class="nav-link text-white"> 
+		 	    <use xlink:href="#speedometer2" /> 
+				   <i class="bi bi-house"></i>
+				</svg> inicio </a>
+			</li>
+		 
+				<li><a href="salvarGalaxias.html" class="nav-link text-white"> <use
+							xlink:href="#speedometer2" /> <i class="bi bi-save"></i> </svg> Salvar
+						galaxias
 				</a></li>
-
-				<li><a href="index.html" class="nav-link text-white"> 
-				  <use xlink:href="#speedometer2" /> <i class="bi bi-save"></i> 
-				  </svg> Salvar galaxias</a>
-				</li>
 				
 				<li><a href="listCatalog" class="nav-link text-white"> 
 				  <use xlink:href="#speedometer2" /><i class="bi bi-tropical-storm"></i> 
 				  </svg>Galaxias catalogadas</a>
 				</li>
-				
 
 				<li><a href="GalaxyCreate" class="nav-link text-white"> <use
 							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>
@@ -59,6 +60,8 @@
 		</div>
 
 		<!-- ######################fim Sidebars -->
+
+		<br> <br> <br> <br> <br> <br> <br>
 
 
  		<div class="container">
