@@ -89,8 +89,7 @@
 				</div>
 			</div>
 			<!-- Inclusão de listagem  -->
-
-
+ 
 
 			<div class="row">
 				<div class="col-lg-14">
@@ -128,10 +127,9 @@
 									</tr>
 								</c:forEach>
 							</thead>
-							<tbody>
-							 
-
-							</tbody>
+							
+ 
+												 
 						</table>
 					</div>
 				</div>
