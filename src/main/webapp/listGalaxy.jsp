@@ -126,10 +126,7 @@
 										</td>
 									</tr>
 								</c:forEach>
-							</thead>
-							
- 
-												 
+							</thead>				 
 						</table>
 					</div>
 				</div>
