@@ -50,16 +50,16 @@ Ou baixe um ZIP de main [manualmente](https://github.com/Mario23junior/Galaxy-AP
 Abra o terminal de comando e verifique se todos os compartimentos necessários estão em seu devido path e atualizados:
 
 ```
-$ java -versão
-# ^ deve ser pelo menos *8
-$ mvn -V
-# ^ mysql  Ver 8.0.34-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
+$ java -version
+# *8 ou superio
+$ mysql -V
+# mysql Ver 8.0.34-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
 ```
 
 ##  📚 📖 Consulte a documentação github
 
 ```
- git-hub
+ https://github.com/Mario23junior/Mapeador-de-galaxias#readme
 ```
 
 Em seguida adicione seu servido na aplicação local e execute
