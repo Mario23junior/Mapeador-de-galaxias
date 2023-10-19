@@ -2,8 +2,8 @@
 
 <br />
 <div align="center">
-  <a href="logo.gif">
-    <img src="logo/logo.gif" alt="Logo" width="700" height="300" style="border-radius: 50%"/>
+  <a href="img/logcDoc.gif">
+    <img src="img/logcDoc.gif" alt="Logo" width="800" height="560" style="border-radius: 50%"/>
   </a>
 
   
