@@ -57,6 +57,10 @@
 							xlink:href="#speedometer2" /> <i class="bi bi-list-check"></i> </svg>
 						Listar galaxias
 				</a></li>
+				
+				
+				
+				
 		</div>
 
 		<!-- ######################fim Sidebars -->
@@ -78,8 +82,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="index.html" class="btn btn-primary btn-lg active"
-						role="button" href="index.html" aria-pressed="true">Registrar galaxia</a>
+				 
 				</div>
 			</div>
 			<hr>
