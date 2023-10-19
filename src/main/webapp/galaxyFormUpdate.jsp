@@ -71,7 +71,7 @@
  					
 					
  					<div class="col-sm-6">
-						<label for="firstName" class="form-label"> Nome</label> <input
+						<label   class="form-label"> Nome</label> <input
 							value="${galaxy.nome}" name="nome" type="text" class="form-control"
 							id="firstName" required>
 						<div class="invalid-feedback"></div>
@@ -79,14 +79,14 @@
 					
 
 					<div class="col-sm-6">
-						<label for="lastName" class="form-label">Tipo</label> <input
-							type="text"value="${galaxy.tipo}" name="tipo" class="form-control" id="lastName"
+						<label   class="form-label">Tipo</label> <input
+							type="text"value="${galaxy.tipo}" name="tipo" class="form-control"
 							placeholder="" required>
 						<div class="invalid-feedback"></div>
 					</div>
 
 					<div class="col-12">
-						<label for="username" class="form-label">Ano</label>
+						<label class="form-label">Ano</label>
 						<div class="input-group has-validation">
 							<input type="text"value="${galaxy.ano}" name="ano" class="form-control" value=""
 								id="username" required>
@@ -94,42 +94,41 @@
 					</div>
 
 					<div class="col-12">
-						<label for="username" class="form-label">Maguinitude</label>
+						<label   class="form-label">Maguinitude</label>
 						<div class="input-group has-validation">
 							<input type="text" value="${galaxy.magnitude}" name="magnitude" class="form-control" value=""
-								id="username" required>
+								  required>
 						</div>
 					</div>
 
 
 					<div class="col-12">
-						<label for="address" class="form-label">Quantidade de
-							estrelas</label> 
+						<label class="form-label">Quantidade de estrelas</label> 
 							<input type="text"  value="${galaxy.qtproxima}"  name="qtproxima" value=""
-							class="form-control" id="address" required>
+							class="form-control" required>
 					</div>
 
 					<div class="col-12">
-						<label for="address2" class="form-label">Distancia em anos
+						<label  class="form-label">Distancia em anos
 							luz <span class="text-body-secondary"></span> 
-							<input type="text"name="distancia" value="${galaxy.distancia}" class="form-control" value="" id="address2">
+							<input type="text"name="distancia" value="${galaxy.distancia}" class="form-control" value="">
 						</label>
 					</div>
 
 					<div class="col-12">
-						<label for="address2" class="form-label">Constelação<span
+						<label class="form-label">Constelação<span
 							class="text-body-secondary"></span></label> 
 							<input type="text" name="constelacao" value="${galaxy.constelacao}"  class="form-control" value="">
 					</div>
 
 					<div class="col-12">
-						<label for="address2" class="form-label">URL da imagem<span
+						<label class="form-label">URL da imagem<span
 							class="text-body-secondary"></span></label> 
 							<input type="text"value="${galaxy.img}" name ="img"   class="form-control" value="">
 					</div>
 					
 						<div class="col-12">
-						<label for="address2" class="form-label">Descrição da galaxia<span
+						<label class="form-label">Descrição da galaxia<span
 							class="text-body-secondary"></span></label> 
 							<input type="text"value="${galaxy.descricao}" name ="descricao"   class="form-control" value="">
 					</div>

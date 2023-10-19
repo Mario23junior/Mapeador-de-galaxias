@@ -102,7 +102,7 @@
 									<th>Constelações</th>
 									<th>tipo</th>
 									<th>Distancia da terra</th>
-									<th>Ano de descoberta</th>
+									<th>Idade</th>
 									<th>magnitude</th>
 									<th>Estrelas a proximadas</th>
 									<th>Ações</th>

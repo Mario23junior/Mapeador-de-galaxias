@@ -24,17 +24,17 @@ public class GalaxyDao implements OperacaoCrudAssinatur {
 			ps.setString(2, g.getImg());
 			ps.setString(3, g.getAno());
 			ps.setString(4, g.getMagnitude());
-			ps.setString(5, g.getQtproxima());
-			ps.setString(6, g.getDistancia());
 			ps.setString(7, g.getConstelacao());
 			ps.setString(8, g.getDescricao());
 			ps.setString(9, g.getTipo());
+			ps.setString(5, g.getQtproxima());
+			ps.setString(6, g.getDistancia());
 			ps.executeUpdate();
 			System.out.println("Sucesso");
 		} catch (SQLException e) {
 			System.out.println("Erro ao realizar  inclusao no banco de dados ");
 		}
-	};
+	}
 
 	public static List<Galaxy> GalaxiaBuscaPor(String pesquisa) {
 		sql = String.format("select * from Galaxy where nome like '%s%%' or tipo like '%s%%'", pesquisa, pesquisa);
